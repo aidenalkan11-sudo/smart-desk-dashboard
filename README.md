@@ -50,4 +50,4 @@ sudo systemctl enable --now dashboard-backend.service
 sudo systemctl enable --now dashboard-ui.service
 ```
 
-The physical button is BCM GPIO 17, active LOW with the internal pull-up. A short press changes pages; on page 3, a long press opens/closes the fixture menu.
+The physical button uses **BCM GPIO 14**, configured as `GPIO.setup(14, GPIO.IN, pull_up_down=GPIO.PUD_UP)`, so it is active LOW with the internal pull-up. A short press changes pages; on page 3, a long press opens/closes the fixture menu.
