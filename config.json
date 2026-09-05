@@ -1,7 +1,7 @@
 {
-  "canvas_token": "",
+  "canvas_token": "6041~xtCXyUzzWKeXFuxVZfKznaWMTkD2h2ZhZyCmhrWNkTWGM3BwCmER6CERurUfV7yU",
   "canvas_base_url": "https://mgs.instructure.com",
-  "outlook_ics_url": "",
+  "outlook_ics_url": "https://outlook.office365.com/owa/calendar/b25d0bb496b74a79aeece1bc03989d6b@student.mgs.vic.edu.au/0f3c35e9c1384f7d801b998cfbb5739813553683567129542528/calendar.ics",
   "spotify_client_id": "177e660e787f4ba387ac424bb3d2d829",
   "spotify_client_secret": "dfa1ed360b804f86bca96078339cd579",
   "spotify_redirect_uri": "http://localhost:8888/callback",
@@ -11,6 +11,6 @@
   "weather_lon": 144.9633,
   "weather_timezone": "Australia/Melbourne",
   "squiggle_user_agent": "",
-  "favourite_afl_team": "brisbane",
+  "favourite_afl_team": "Western Bulldogs",
   "gpio_button_pin": 17
 }
