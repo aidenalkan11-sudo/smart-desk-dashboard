@@ -1,0 +1,16 @@
+{
+  "canvas_token": "",
+  "canvas_base_url": "https://mgs.instructure.com",
+  "outlook_ics_url": "",
+  "spotify_client_id": "177e660e787f4ba387ac424bb3d2d829",
+  "spotify_client_secret": "dfa1ed360b804f86bca96078339cd579",
+  "spotify_redirect_uri": "http://localhost:8888/callback",
+  "finnhub_api_key": "d8nuvipr01qvvn9bhoggd8nuvipr01qvvn9bhoh0",
+  "newsapi_key": "3fcb0511d31649de86674fc1bd0792e8",
+  "weather_lat": -37.814,
+  "weather_lon": 144.9633,
+  "weather_timezone": "Australia/Melbourne",
+  "squiggle_user_agent": "",
+  "favourite_afl_team": "brisbane",
+  "gpio_button_pin": 17
+}
