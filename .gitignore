@@ -1,0 +1,5 @@
+config.json
+spotify_token.json
+*.pyc
+__pycache__/
+*.log
