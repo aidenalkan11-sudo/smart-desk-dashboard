@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_URL = "http://127.0.0.1:5000/data"
 WIDTH, HEIGHT = 1024, 600
 FPS = 30
-PIN = 17
+PIN = 14
 
 C = {"bg":"#121212","card":"#171819","border":"#232427","inner":"#1c1e21","accent":"#48a0dc",
      "positive":"#32cd32","negative":"#e03232","primary":"#e8e8e8","secondary":"#8a8a8a","white":"#ffffff",
@@ -177,13 +177,14 @@ def page5():
 
 def main():
     global page, fixture_menu, fixture_index, button_down_at, last_press
-    GPIO.setmode(GPIO.BCM); GPIO.setup(PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(14, GPIO.IN, pull_up_down=GPIO.PUD_UP)
     threading.Thread(target=fetch_data,daemon=True).start()
     try:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT: raise KeyboardInterrupt
-            state=GPIO.input(PIN); now=time.monotonic()
+            state=GPIO.input(14); now=time.monotonic()
             if state == GPIO.LOW and button_down_at is None: button_down_at=now
             if state == GPIO.HIGH and button_down_at is not None:
                 held=now-button_down_at; button_down_at=None
