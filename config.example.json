@@ -12,5 +12,5 @@
   "weather_timezone": "Australia/Melbourne",
   "squiggle_user_agent": "smart-desk-dashboard",
   "favourite_afl_team": "brisbane",
-  "gpio_button_pin": 17
+  "gpio_button_pin": 14
 }
