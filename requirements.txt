@@ -1,0 +1,7 @@
+flask
+requests
+pygame
+RPi.GPIO
+icalendar
+python-dateutil
+spotipy
