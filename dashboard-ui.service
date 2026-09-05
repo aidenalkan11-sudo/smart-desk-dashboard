@@ -1,0 +1,17 @@
+[Unit]
+Description=Smart Desk Dashboard UI
+After=dashboard-backend.service
+Requires=dashboard-backend.service
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/dashboard
+Environment=SDL_VIDEODRIVER=fbcon
+Environment=SDL_FBDEV=/dev/fb0
+ExecStart=/usr/bin/python3 /home/pi/dashboard/ui.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
